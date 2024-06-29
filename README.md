@@ -97,7 +97,7 @@ CODE: 200 OK
         "title": "Accountant",
         "dateOfBirth": "1987-01-10",
         "gender": "MALE",
-        "email": "pedro.penduko@schoolofthewof.com",
+        "email": "william.wallace@scotland.com",
         "address": "the dark woods"
     },
     {

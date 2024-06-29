@@ -1,5 +1,8 @@
 package com.appplication.technicaltask.controller;
 
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -20,12 +23,18 @@ public class ApplicationController {
 
     @PostMapping("api/v1/employee")
     @ResponseBody
-    public EmployeeResponseDto addEmployee(@RequestBody EmployeeInputDto employeeInputDto){
+    public EmployeeResponseDto addEmployee(@RequestBody EmployeeInputDto employeeInputDto) {
         Employee newEmployee = new Employee(employeeInputDto.getFirstName(), employeeInputDto.getLastName(), employeeInputDto.getTitle(),
             employeeInputDto.getDateOfBirth(), employeeInputDto.getGender(), employeeInputDto.getEmail(), employeeInputDto.getAddress());
 
         newEmployee = employeeRepository.save(newEmployee);
-
+        
         return new EmployeeResponseDto(newEmployee.getEmployeeId(), newEmployee.getFirstName(), newEmployee.getLastName(), newEmployee.getEmail());
+    }
+
+    @GetMapping("api/v1/employees")
+    @ResponseBody
+    public List<Employee> getEmployees(){
+        return employeeRepository.findAll();
     }
 }

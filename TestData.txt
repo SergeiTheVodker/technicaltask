@@ -1,0 +1,38 @@
+{
+    "firstName" : "Jack",
+    "lastName" : "Goodtime",
+    "title" : "Commander-in-Chief",
+    "dateOfBirth" : "1990-02-03",
+    "gender" : "MALE",
+    "email" : "jack.goodtime@mail.com",
+    "address" : "red rock village cebu"
+}
+{
+    "firstName" : "Mary",
+    "lastName" : "Sue",
+    "title" : "Head Chef",
+    "dateOfBirth" : "1995-09-15",
+    "gender" : "FEMALE",
+    "email" : "mary.sue@mail.com",
+    "address" : "flower hill cebu"
+}
+{
+    "firstName" : "Pedro",
+    "lastName" : "Penduko",
+    "title" : "Monster Hunter",
+    "dateOfBirth" : "1990-04-05",
+    "gender" : "MALE",
+    "email" : "pedro.penduko@schoolofthewolf.com",
+    "address" : "the dark woods"
+}
+
+//ERROR CASES Enter twice for duplicate email.
+{
+    "firstName" : "Jack",
+    "lastName" : "Badtime",
+    "title" : "Trying to break the system",
+    "dateOfBirth" : "1990-02-03",
+    "gender" : "MALE",
+    "email" : "jack.goodtime@mail.com",
+    "address" : "red rock village cebu"
+}

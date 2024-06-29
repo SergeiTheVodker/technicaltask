@@ -8,8 +8,12 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 public class EmployeeResponseDto {
+
     Long employeeNumber;
+
     String firstName;
+
     String lastName;
+
     String email;
 }

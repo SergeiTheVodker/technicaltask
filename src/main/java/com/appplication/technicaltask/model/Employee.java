@@ -40,12 +40,13 @@ public class Employee {
     String email;
 
     String address;
-    
+
     public Employee(String firstName, String lastName, String title, LocalDate dateOfBirth, String gender, String email, String address) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.title = title;
         this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
         this.email = email;
         this.address = address;
     }
